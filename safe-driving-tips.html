@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeDrive Tips | Drive Smart, Stay Safe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('https://picsum.photos/id/1015/1920/1080');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .tip-card {
+            transition: all 0.3s ease;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-car text-white text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">SafeDrive</h1>
+                    <p class="text-xs text-gray-500 -mt-1">Drive Safe. Arrive Alive.</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                <a href="#tips" class="text-gray-700 hover:text-blue-600 transition">Tips</a>
+                <a href="#resources" class="text-gray-700 hover:text-blue-600 transition">Resources</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition">Blog</a>
+            </div>
+            
+            <button onclick="window.scrollTo({top: document.getElementById('tips').offsetTop - 80, behavior: 'smooth'})"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-2xl font-semibold flex items-center gap-2 transition">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Learn the Tips</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+                Safe Driving Starts<br>With You
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-200 mb-10 max-w-2xl mx-auto">
+                Small habits. Big difference. Learn the essential tips to protect yourself and others on the road.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="window.scrollTo({top: document.getElementById('tips').offsetTop - 80, behavior: 'smooth'})"
+                        class="bg-white text-gray-900 hover:bg-gray-100 px-10 py-4 rounded-3xl text-lg font-semibold flex items-center justify-center gap-3 transition">
+                    <i class="fa-solid fa-list-check"></i>
+                    View All Tips
+                </button>
+                <button class="border border-white hover:bg-white/10 px-10 py-4 rounded-3xl text-lg font-semibold transition">
+                    Watch Video
+                </button>
+            </div>
+            <div class="mt-16 flex justify-center gap-8 text-sm">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-users text-green-400"></i>
+                    <span>1.2M+ Lives Saved</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-clock text-green-400"></i>
+                    <span>Updated 2026</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        
+        <!-- Introduction -->
+        <div class="max-w-3xl mx-auto text-center mb-20">
+            <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 text-sm font-medium px-4 py-2 rounded-full mb-6">
+                <i class="fa-solid fa-road"></i>
+                <span>National Highway Safety Campaign</span>
+            </div>
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Essential Safe Driving Tips</h2>
+            <p class="text-lg text-gray-600">
+                Whether you're a new driver or have been driving for decades, these proven tips can help reduce accidents and save lives.
+            </p>
+        </div>
+
+        <!-- Tips Grid -->
+        <section id="tips" class="mb-24">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Tip 1 -->
+                <div class="tip-card bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
+                    <div class="h-2 bg-red-500"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-seatbelt"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">1. Always Wear Your Seatbelt</h3>
+                        <p class="text-gray-600 mb-6">Seatbelts reduce the risk of fatal injury by up to 50% for front-seat passengers. Make it a habit before you even start the engine.</p>
+                        <div class="text-xs uppercase tracking-widest text-red-500 font-medium">Most Important Rule</div>
+                    </div>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="tip-card bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
+                    <div class="h-2 bg-amber-500"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">2. Eliminate Distractions</h3>
+                        <p class="text-gray-600 mb-6">Put your phone on Do Not Disturb mode. Never text, eat, or apply makeup while driving. One second of distraction can change everything.</p>
+                        <div class="flex items-center gap-2 text-sm text-gray-500">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span>Distracted driving causes 25% of crashes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="tip-card bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
+                    <div class="h-2 bg-emerald-500"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-speedometer"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">3. Respect Speed Limits</h3>
+                        <p class="text-gray-600 mb-6">Speeding reduces your reaction time and increases stopping distance dramatically. Drive at a speed appropriate for conditions.</p>
+                        <div class="text-sm text-emerald-600 font-medium">Arrive alive, not in a hurry</div>
+                    </div>
+                </div>
+
+                <!-- Tip 4 -->
+                <div class="tip-card bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
+                    <div class="h-2 bg-purple-500"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-wine-glass"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">4. Never Drink & Drive</h3>
+                        <p class="text-gray-600 mb-6">Even one drink can impair your judgment. Use a designated driver, rideshare, or public transportation if you've been drinking.</p>
+                    </div>
+                </div>
+
+                <!-- Tip 5 -->
+                <div class="tip-card bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
+                    <div class="h-2 bg-sky-500"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">5. Maintain Safe Following Distance</h3>
+                        <p class="text-gray-600 mb-6">Use the 3-second rule in good weather and the 6-second rule in bad conditions. This gives you time to react safely.</p>
+                    </div>
+                </div>
+
+                <!-- Tip 6 -->
+                <div class="tip-card bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
+                    <div class="h-2 bg-rose-500"></div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-rose-100 text-rose-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                            <i class="fa-solid fa-cloud-rain"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">6. Adjust for Weather Conditions</h3>
+                        <p class="text-gray-600 mb-6">Slow down in rain, snow, or fog. Increase following distance and use headlights appropriately. Never drive through flooded roads.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Tips -->
+        <div class="bg-white rounded-3xl p-10 md:p-16 mb-20">
+            <h3 class="text-3xl font-bold mb-10 text-center">More Important Habits</h3>
+            <div class="grid md:grid-cols-2 gap-x-16 gap-y-8">
+                <div class="flex gap-5">
+                    <span class="text-4xl text-gray-300 font-semibold">07</span>
+                    <div>
+                        <h4 class="font-semibold mb-1">Regular Vehicle Maintenance</h4>
+                        <p class="text-gray-600">Keep tires properly inflated, brakes checked, and lights working. A well-maintained car is a safer car.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <span class="text-4xl text-gray-300 font-semibold">08</span>
+                    <div>
+                        <h4 class="font-semibold mb-1">Check Blind Spots</h4>
+                        <p class="text-gray-600">Always look over your shoulder before changing lanes. Mirrors alone aren't enough.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <span class="text-4xl text-gray-300 font-semibold">09</span>
+                    <div>
+                        <h4 class="font-semibold mb-1">Stay Alert & Rested</h4>
+                        <p class="text-gray-600">Drowsy driving is as dangerous as drunk driving. Take breaks on long trips.</p>
+                    </div>
+                </div>
+                <div class="flex gap-5">
+                    <span class="text-4xl text-gray-300 font-semibold">10</span>
+                    <div>
+                        <h4 class="font-semibold mb-1">Be Courteous</h4>
+                        <p class="text-gray-600">Road rage causes many accidents. Stay calm and give others space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-3xl p-12 md:p-16 text-center">
+            <h3 class="text-4xl font-bold mb-4">Make Safety Your Priority</h3>
+            <p class="text-xl max-w-2xl mx-auto mb-10">Remember: The best drivers aren't the fastest — they're the ones who get home safely every time.</p>
+            <button onclick="alert('Thank you for committing to safer driving! 🚗')"
+                    class="bg-white text-blue-600 hover:bg-gray-100 px-12 py-5 rounded-3xl font-bold text-lg transition">
+                I Pledge to Drive Safely
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <div class="flex items-center gap-3 text-white mb-6">
+                        <div class="w-9 h-9 bg-blue-600 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <span class="text-2xl font-bold">SafeDrive</span>
+                    </div>
+                    <p class="text-sm">Promoting safer roads since 2024.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Driving Tips</a></li>
+                        <li><a href="#" class="hover:text-white transition">Defensive Driving</a></li>
+                        <li><a href="#" class="hover:text-white transition">Winter Driving</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-6">Resources</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-white transition">DMV Handbook</a></li>
+                        <li><a href="#" class="hover:text-white transition">Local Laws</a></li>
+                        <li><a href="#" class="hover:text-white transition">Emergency Numbers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-6">Stay Safe</h4>
+                    <p class="text-sm mb-4">Share this page with friends and family.</p>
+                    <div class="flex gap-4 text-2xl">
+                        <i class="fa-brands fa-facebook hover:text-blue-400 cursor-pointer transition"></i>
+                        <i class="fa-brands fa-x-twitter hover:text-white cursor-pointer transition"></i>
+                        <i class="fa-brands fa-instagram hover:text-pink-400 cursor-pointer transition"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-gray-800 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>© 2026 SafeDrive Tips. All rights reserved. Educational purpose only.</p>
+                <p class="flex items-center gap-2">
+                    Made with ❤️ for safer roads
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded via CDN
+        console.log("%cSafeDrive Tips webpage loaded successfully! 🚗", "color: #3b82f6; font-weight: bold");
+    </script>
+</body>
+</html>
